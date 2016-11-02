@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<title>PB029: (x)html, css a JavaScript</title>
+</head>
+<body>
+	<header>
+		<h1 onclick="changeColor(this)">PB029: (X)HTML, CSS a JavaScript</h1>
+	</header>
+	<main>
+		<h2 onclick="changeColor(this)">Úvod</h2>
+		<p>
+			Jedním z nejběžnějších elektronických dokumentů jsou webové stránky. Představíme si základní principy jejich tvorby pomocí jazyka <a href="http://www.fi.muni.cz/lemma/PB029/practices/html/#html">(X)HTML</a>. Zároveň si představíme jazyky <a href="http://www.fi.muni.cz/lemma/PB029/practices/css-a-javascript/#css">CSS</a> a <a href="http://www.fi.muni.cz/lemma/PB029/practices/css-a-javascript/#javascript">JavaScript</a>, pomocí kterých můžeme popsat formu webové stránky a vytvářet interaktivní prvky.
+		</p>
+		<h2 onclick="changeColor(this)">Další informace</h2>
+		<p>
+			K zachycení struktury webových stránek můžeme použít jazyky
+			<ul>
+				<li><a href="http://www.fi.muni.cz/lemma/PB029/practices/html/#html">&lt;X&gt;HTML<a> nebo</li>
+				<li><a href="http://www.fi.muni.cz/lemma/PB029/practices/ruzne-podoby-texu/#latex">TeX</a></li>
+			</ul>
+			a k popisu formy a interaktivních prvků stránek můžeme použít jazyky
+			<ol>
+				<li><a href="http://www.fi.muni.cz/lemma/PB029/practices/css-a-javascript/#css">CSS</a> nebo</li>
+				<li><a href="http://www.fi.muni.cz/lemma/PB029/practices/css-a-javascript/#javascript">JavaScript</a>.</li>
+			</ol>
+		</p>
+		<p>
+			Zmínka o TeXu <em>není chyták</em>. Pomocí balíku <strong><tt><a href="https://www.tug.org/tex4ht/">tex4ht</a></tt></strong> lze vytvářet webové stránky a e-booky přímo z TeXových dokumentů. Zkuste si soubor <strong><tt>sample2e.tex</tt></strong> dostupný ve vaší TeXové distribuci zpracovat příkazem <strong><tt>htlatex</tt></strong>.
+		</p>	
+	</main>
+	
+	<script>
+		function changeColor(id) {
+			if (id.style.color == "purple")
+			{
+				id.style.color = "black"
+			}
+			else
+			{
+				id.style.color = "purple"
+			}
+		}
+	</script>
+
+</body>
+</html>
